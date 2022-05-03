@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.bargraph {
+    background-color: #cec9c9;
+    color: white;
+    display: inline-block;
+    height: 450px;
+    margin: auto;
+    padding: 2em;
+}
+
+.bar {
+    background-color: white;
+    display: inline-block;
+    height: 300px;
+    margin: 0 2em;
+    position: relative;
+    width: 24px;
+}
+
+.bar-inner {
+    background-color: crimson;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.bar-inner-1 {
+    animation: grow-1 1.5s forwards;
+}
+
+@keyframes grow-1 {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 20%;
+    }
+}
+
+.bar-inner-2 {
+    animation: grow-2 1.5s forwards;
+}
+
+@keyframes grow-2 {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 30%;
+    }
+}
+
+.bar-inner-3 {
+    animation: grow-3 1.5s forwards;
+}
+
+@keyframes grow-3 {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 80%;
+    }
+}
+
+.percentage {
+    position: absolute;
+    bottom: -10%;
+}
+
+h2 {
+    margin: 2.5em 0 0;
+    text-align: center;
+}

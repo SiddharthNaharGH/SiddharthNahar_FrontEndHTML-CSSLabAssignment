@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+.heading {
+    background-color: red;
+    text-align: center;
+}
+
+.heading h1 {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.navmenu {
+    background-color: #777;
+    position: sticky;
+    top: 0;
+}
+
+.navmenu-group {
+    margin: 0;
+    padding: 0;
+}
+
+.navmenu-group > li {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.navmenu-group > li:hover {
+    background-color: black;
+}
+
+.navmenu-group > li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dd-menu-group-container {
+    position: relative;
+}
+
+.dd-menu-group {
+    background-color: white;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.dd-menu-group-container:hover .dd-menu-group {
+    display: block;
+}
+
+.dd-menu-group > li a {
+    color: black;
+    display: inline-block;
+    padding: 0.5em;
+    width: 100px;
+}
+
+.dd-menu-group > li:hover a {
+    background-color: black;
+    color: white;
+}
